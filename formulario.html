@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="https://formspree.io/f/xovqjyvy" method="POST">
+        <label for="">Nombre:</label>
+        <input type="text" placeholder="Escriba su nombre" required id="nombre" name="nombre">
+        <br>
+        <label for="">Apellido:</label>
+        <input type="text" placeholder="Escriba su apellido" required id="apellido" name="apellido">
+        <br>
+        <label for="">E-mail:</label>
+        <input type="email" placeholder="Escriba su correo electronico" id="email" name="email">
+        <br>
+        <label for="">Escriba su consulta:</label>
+        <br>
+        <textarea name="comentario" id="comentario" rows="10" cols="40" ></textarea>
+        <br>
+        <input type="submit">
+
+    </form>
+    <a href="index.html">Volver</a>
+</body>
+</html>

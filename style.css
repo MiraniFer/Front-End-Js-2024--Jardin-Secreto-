@@ -1,0 +1,22 @@
+body{background-color: #D3EE98;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header img{
+    width: 36px;
+    height: 36px;
+}
+section img{
+    width: auto;
+    height: 300px;
+}
+header{
+    background-color: #72BF78;
+}
+footer{
+    background-color: #72BF78;
+}
+footer img {
+    width: 24px;
+    height: 24px;
+}
