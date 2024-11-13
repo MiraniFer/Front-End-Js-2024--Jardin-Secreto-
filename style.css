@@ -1,7 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{background-color: #D3EE98;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 header img{
     width: 36px;
@@ -13,15 +16,49 @@ section img{
 }
 header{
     background-color: #72BF78;
+    margin:auto;
     display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center;            /* Alinea los elementos verticalmente al centro */
+    padding: 10px 20px;             /* Espaciado alrededor del header */
     
 }
-#carrito{
-  margin: auto; 
-} 
-#textoHeader{
-    color:#D3EE98;
+#icono {
+  width: 40px;                    /* Ajusta el tamaño del logo */
+  height: auto;
 }
+.iconos-derecha {
+  display: flex;                  /* Flexbox para alinear el avatar y el carrito en línea */
+  align-items: center;            /* Alinea el avatar y el carrito verticalmente */
+}
+
+#carrito {
+  width: 30px;                    /* Ajusta el tamaño del carrito */
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Espaciado entre las imágenes */
+header img {
+  margin-left: 15px;
+}
+
+/* Para asegurar que el avatar y el carrito no se distorsionen */
+header img:last-child {
+  width: 40px;  /* Ajusta el tamaño del carrito */
+  height: 40px;
+  /* border-radius: 50%;   Hace que el avatar sea circular */
+}
+
+ 
+.textoHeader{
+    color:white;
+}
+
 .carousel-item img {
   object-fit: cover;  /* Mantiene la proporción y recorta el exceso de imagen */
   height: 400px;      /* Ajusta la altura según lo que necesites */
@@ -61,3 +98,148 @@ ul {
     background-color: #72BF78;
     color: white;
   }
+  /* -----------MAIN SECCION---------- */
+main{
+  display:grid;
+  padding: 1rem;
+} 
+main h2{
+  text-align: center;
+  color:#72BF78 ;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.grid-container{
+  display: grid;
+  margin: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.card-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  margin: .5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro de la tarjeta estén en columna */
+  height: 450px; /* Altura fija para las tarjetas */
+  overflow: hidden; /* Evita que el contenido se desborde si es demasiado grande */
+}
+.card-item img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: 300px; /* Establece una altura fija para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionarse */
+  border-top-left-radius: 10px; /* Redondea las esquinas superiores de la imagen */
+  border-top-right-radius: 10px; /* Redondea las esquinas superiores de la imagen */
+}
+.card-item button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #72BF78;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: auto;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+  /* Estilos del formulario */
+.formulario {
+    text-align: center;
+    color:#72BF78 ;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+form {
+  max-width: 600px;      /* El formulario tendrá un tamaño máximo de 600px */
+  margin: 0 auto;        /* Centra el formulario en la pantalla */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;    /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;           /* Ocupa todo el ancho disponible */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;           /* Hace que el botón de envío ocupe todo el ancho */
+  padding: 12px;
+  background-color: #72BF78; /* Color de fondo */
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9; /* Cambia el color de fondo al hacer hover */
+}
+
+/* Estilos de los enlaces */
+.a-formulario {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+
+/* Para pantallas de dispositivos más pequeños (móviles) */
+@media (max-width: 600px) {
+  form {
+      padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      font-size: 14px;   /* Texto un poco más pequeño */
+  }
+
+  input[type="submit"] {
+      font-size: 14px;
+  }
+
+  .formulario {
+      font-size: 24px;    /* Título más pequeño en pantallas pequeñas */
+  }
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+}
+
+/* Para pantallas más grandes (tablets y escritorios) */
+@media (min-width: 601px) {
+  .formulario {
+      font-size: 32px;
+  }
+}

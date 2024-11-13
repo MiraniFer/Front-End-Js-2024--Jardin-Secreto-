@@ -11,14 +11,17 @@
 </head>
 <body>
     <header>
-        <h1 id="textoHeader">Jardin Secreto</h1>
+        <h1 class="textoHeader">Jardin Secreto</h1>
         <img id="icono" src="img/icono.png" alt="logo" >
-        <h4 id="textoHeader">Plantas naturales</h4>
-        <img id= carrito src="img/carrito-de-compras.png" alt="carrito">
+        <h4 class="textoHeader">Plantas naturales</h4>
+        <div class="iconos-derecha">
+          <img src="img/avatar.png" alt="avatar">
+          <img id= carrito src="img/carrito-de-compras.png" alt="carrito">
+        </div>
     </header>
     <nav class="navegacion"> 
         <ul>
-            <li><a href="default.asp">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="news.asp">Productos</a></li>
             <li><a href="formulario.html">Contacto</a></li>
             <li><a href="about.asp">Tips y cuidados</a></li>
@@ -65,53 +68,177 @@
       </div>
     </section>
     <main>
-      <h3>Plantas de interior</h3>
-        <p>tabla productos</p>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="img/pexels-untal3d-25651510.jpg" class="card-img-top" alt="img4">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="img/pexels-prithiviraj-19212126.jpg" class="card-img-top" alt="img3">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="img/pexels-jriika-1704899.jpg" class="card-img-top" alt="img2">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="img/pexels-alyssa-1859622.jpg" class="card-img-top" alt="img1">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <h2>Plantas de interior</h2>
+    <div class="grid-container">
+      <div class="card-item">
+        <img src="img/lazo_de_amor.webp" alt="">
+        <h3>Lazo de Amor</h3>
+        <p class="price">$19,999</p> 
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="card-item">
+        <img src="img/imgp2301_rubra .webp" alt="Rubra">
+        <h3>Planta Rubra</h3>
+        <p class="price">$39,999</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="card-item">
+        <img src="img/imgp2300_massangeana.webp" alt="massangeana">
+        <h3>Planta Masangeana</h3>
+        <p class="price">$54,999</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="card-item">
+        <img src="img/imgp2385_cica.webp" alt="cica">
+        <h3>Planta Cica</h3>
+        <p class="price">$19,999</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="card-item">
+        <img src="img/MARGINATA.webp" alt="marginata">
+        <h3>Planta Marginata</h3>
+        <p class="price">$24,999</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="card-item">
+        <img src="img/peruviano.jpg" alt="peruviano">
+        <h3>Planta Peruviano</h3>
+        <p class="price">$34,999</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="card-item">
+        <img src="img/robusta.webp" alt="robusta">
+        <h3>Planta Robusta</h3>
+        <p class="price">$32,999</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="card-item">
+        <img src="img/syngonium.webp" alt="syngonium">
+        <h3>Planta Syngonium</h3>
+        <p class="price">$44.999</p>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+      <h2>Plantas de exterior</h2>
+      <div class="grid-container">
+        <div class="card-item">
+          <img src="img/azalea.png" alt="azalea">
+          <h3>Planta Azalea </h3>
+          <p class="price">$12,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/malvon.png" alt="malvon">
+          <h3>Planta Malvon </h3>
+          <p class="price">$4,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/margarita.webp" alt="margarita">
+          <h3>Planta Margarita</h3>
+          <p class="price">$6,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/petunia.png" alt="petunia">
+          <h3>Planta Petunia </h3>
+          <p class="price">$3,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/rosa_rococo.png" alt="Rosa">
+          <h3>Planta Rosa Rococo</h3>
+          <p class="price">$4,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/rosachina.png" alt="Rosa China">
+          <h3>Planta Rosa China</h3>
+          <p class="price">$6,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/santarita.png" alt="Santa Rita">
+          <h3>Planta Santa Rita</h3>
+          <p class="price">$8,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/santateresita.png" alt="Santa Teresita">
+          <h3>Planta  Santa Teresita</h3>
+          <p class="price">$6,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+      </div>
+
+      <h2>Arboles frutales</h2>
+      <div class="grid-container">
+        <div class="card-item">
+          <img src="img/limonero.webp" alt="limon">
+          <h3> Limonero</h3>
+          <p class="price">$19,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/manzano.jpg" alt="manzana">
+          <h3> Manzano </h3>
+          <p class="price">$39,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/mandarino.png" alt="mandarino">
+          <h3>Mandarino</h3>
+          <p class="price">$29,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/peral.webp" alt="pera">
+          <h3>Peral</h3>
+          <p class="price">$19,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+      </div>
+      <h2>Suculentas</h2>
+       <div class="grid-container">
+        <div class="card-item">
+          <img src="img/crasas.webp" alt="crasas">
+          <h3>Crasas </h3>
+          <p class="price">$2,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/agave-potatorum.webp" alt="agave">
+          <h3>Agave Potatorum </h3>
+          <p class="price">$2,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/aloe-vera.webp" alt="aloe">
+          <h3>Aloe Vera </h3>
+          <p class="price">$2,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="card-item">
+          <img src="img/rosario.webp" alt="rosario">
+          <h3>Rosario </h3>
+          <p class="price">$2,999</p>
+          <button>Agregar al carrito</button>
+        </div>
+       </div>
+      
     </main>
     <section>
         <p>como llegar a nosotros</p>
     </section>
     <footer>
         <a href="">sobre nosotros</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero architecto commodi ipsa eius, quia quisquam explicabo ipsum, laudantium iste inventore quas. Voluptatum fugit quia alias.</p>
+        <p>En Jardin Secreto somos apasionados por la naturaleza y comprometidos con ofrecer las mejores plantas y productos para tu jardín. Con más de 10 años de experiencia en el sector, nos dedicamos a cultivar y seleccionar plantas de calidad, adaptadas a diferentes tipos de espacios y condiciones.
+
+          Nuestro vivero está diseñado para ofrecerte un ambiente único, donde puedes encontrar una amplia variedad de plantas ornamentales, árboles frutales, plantas de interior, suculentas y mucho más. Además, brindamos asesoramiento personalizado para ayudarte a elegir las opciones más adecuadas para tu jardín o espacio verde.
+          
+          Nos enorgullece ser tu aliado en la creación de espacios llenos de vida, naturaleza y color. Creemos que el cuidado de las plantas es una forma de conectar con el medio ambiente y disfrutar de la tranquilidad que nos brindan.
+          
+          En Jardin Secreto, no solo vendemos plantas, sino que compartimos nuestra pasión por la jardinería y el amor por la naturaleza. ¡Visítanos y descubre cómo podemos ayudarte a hacer crecer tu jardín de sueños!</p>
         <a href="formulario.html">contacto</a>
         <img src="img/correo.png" alt="correo">
         <p></p>
@@ -120,6 +247,7 @@
         <img src="img/logotipo-de-instagram.png" alt="">
         <img src="img/gorjeo.png" alt="">
         <img src="img/whatsapp.png" alt="">
+        
     </footer>
 </body>
 </html>
