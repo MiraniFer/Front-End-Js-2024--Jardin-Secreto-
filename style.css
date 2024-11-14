@@ -6,98 +6,132 @@
 body{background-color: #D3EE98;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* --------------------HEADER--------------------*/
 header img{
     width: 36px;
     height: 36px;
-}
-section img{
-    width: auto;
-    height: 300px;
 }
 header{
     background-color: #72BF78;
     margin:auto;
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a los extremos */
-    align-items: center;            /* Alinea los elementos verticalmente al centro */
-    padding: 10px 20px;             /* Espaciado alrededor del header */
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 20px;             
     
 }
 #icono {
-  width: 40px;                    /* Ajusta el tamaño del logo */
+  width: 40px;                    
   height: auto;
 }
 .iconos-derecha {
-  display: flex;                  /* Flexbox para alinear el avatar y el carrito en línea */
-  align-items: center;            /* Alinea el avatar y el carrito verticalmente */
+  display: flex;                  
+  align-items: center;            
 }
-
 #carrito {
-  width: 30px;                    /* Ajusta el tamaño del carrito */
+  width: 30px;                    
   height: auto;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* Espaciado entre las imágenes */
 header img {
   margin-left: 15px;
 }
-
-/* Para asegurar que el avatar y el carrito no se distorsionen */
 header img:last-child {
-  width: 40px;  /* Ajusta el tamaño del carrito */
+  width: 40px;  
   height: 40px;
-  /* border-radius: 50%;   Hace que el avatar sea circular */
-}
-
- 
+} 
 .textoHeader{
     color:white;
 }
-
+/*----------------CAROUSEL----------------------*/
 .carousel-item img {
-  object-fit: cover;  /* Mantiene la proporción y recorta el exceso de imagen */
-  height: 400px;      /* Ajusta la altura según lo que necesites */
-  width: 100%;        /* Asegura que ocupe el ancho completo */
+  object-fit: cover;  
+  height: 400px;      
+  width: 100%;        
 }
-footer{
-    background-color: #72BF78;
+/*-------------- FOOTER -------------*/
+footer {
+  background-color: #72BF78;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;            
+  justify-content: space-between; 
+  align-items: flex-start;    
+  gap: 30px;                  
+}
+
+.footer-seccion {
+  flex: 1 1 30%; /
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+footer a:hover {
+  color: #3b9b3b;
 }
 footer img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
-/* esta parte la necesito para movile */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    
-    height: 100%; /* Full height */
-    /*position: fixed;  Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-  }
-  li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  /*no me funciona */
-  li a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #72BF78;
-    color: white;
-  }
+.redes-sociales {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.copyright {
+  text-align: center;  
+  margin-top: 30px;    
+  font-size: 14px;     
+  color: white;        
+  padding: 10px 0;     
+}
+.copyright p {
+  margin: 0;           
+}
+/*-------------NAVEGACION------------*/
+.navegacion ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; 
+}
+.navegacion li {
+  margin: 0 15px;
+}
+.navegacion a {
+  color: rgb(0, 22, 17);
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+.navegacion a:hover {
+  background-color: #72BF78;
+}
+.menu-toggle {
+  display: none; 
+}
+.menu-icon {
+  display: none; 
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
   /* -----------MAIN SECCION---------- */
 main{
   display:grid;
@@ -122,16 +156,16 @@ main h2{
   margin: .5rem;
   border-radius: 10px;
   display: flex;
-  flex-direction: column; /* Asegura que los elementos dentro de la tarjeta estén en columna */
-  height: 450px; /* Altura fija para las tarjetas */
-  overflow: hidden; /* Evita que el contenido se desborde si es demasiado grande */
+  flex-direction: column; 
+  height: 450px; 
+  overflow: hidden; 
 }
 .card-item img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
-  height: 300px; /* Establece una altura fija para todas las imágenes */
-  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionarse */
-  border-top-left-radius: 10px; /* Redondea las esquinas superiores de la imagen */
-  border-top-right-radius: 10px; /* Redondea las esquinas superiores de la imagen */
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
 }
 .card-item button {
   border: none;
@@ -150,7 +184,7 @@ main h2{
   color: grey;
   font-size: 22px;
 }
-  /* Estilos del formulario */
+  /* ------------- FORMULARIO ---------- */
 .formulario {
     text-align: center;
     color:#72BF78 ;
@@ -158,12 +192,12 @@ main h2{
     padding: 20px;
 }
 form {
-  max-width: 600px;      /* El formulario tendrá un tamaño máximo de 600px */
-  margin: 0 auto;        /* Centra el formulario en la pantalla */
+  max-width: 600px;      
+  margin: 0 auto;        
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;    /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  border-radius: 8px;    
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 label {
@@ -175,7 +209,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;           /* Ocupa todo el ancho disponible */
+  width: 100%;           
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -184,21 +218,18 @@ textarea {
 }
 
 input[type="submit"] {
-  width: 100%;           /* Hace que el botón de envío ocupe todo el ancho */
+  width: 100%;           
   padding: 12px;
-  background-color: #72BF78; /* Color de fondo */
+  background-color: #72BF78; 
   border: none;
   color: white;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type="submit"]:hover {
-  background-color: #2980b9; /* Cambia el color de fondo al hacer hover */
+  background-color: #2980b9; 
 }
-
-/* Estilos de los enlaces */
 .a-formulario {
   display: block;
   text-align: center;
@@ -206,14 +237,12 @@ input[type="submit"]:hover {
   text-decoration: none;
   color: #3498db;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-/* Estilos Responsivos */
+/* -------------Estilos Responsivos--------------------- */
 
-/* Para pantallas de dispositivos más pequeños (móviles) */
 @media (max-width: 600px) {
   form {
       padding: 15px;
@@ -222,7 +251,7 @@ a:hover {
   input[type="text"],
   input[type="email"],
   textarea {
-      font-size: 14px;   /* Texto un poco más pequeño */
+      font-size: 14px;   
   }
 
   input[type="submit"] {
@@ -230,16 +259,118 @@ a:hover {
   }
 
   .formulario {
-      font-size: 24px;    /* Título más pequeño en pantallas pequeñas */
+      font-size: 24px;    
   }
   .grid-container {
-    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    grid-template-columns: 1fr; 
   }
 }
-
-/* Para pantallas más grandes (tablets y escritorios) */
 @media (min-width: 601px) {
   .formulario {
       font-size: 32px;
   }
+}
+@media (max-width: 768px) {
+  
+  .menu-icon {
+      display: block;
+  }
+
+  .navegacion ul {
+      flex-direction: column; 
+      background-color: #72BF78;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      width: 100%;
+      display: none; 
+      text-align: center;
+  }
+
+  .navegacion li {
+      margin: 10px 0;
+  }
+  .menu-toggle:checked + .menu-icon + ul {
+      display: block;
+  }
+    header {
+      flex-direction: column;  
+      text-align: center;      
+  }
+
+  .iconos-derecha {
+      margin-top: 10px;        
+      justify-content: center; 
+  }
+  #icono {
+      width: 30px;
+  }
+  #carrito {
+      width: 25px;
+  }
+  .textoHeader {
+      font-size: 14px;
+  }
+  .footer-contenedor {
+    flex-direction: column;   
+    text-align: center;       
+}
+
+.footer-seccion {
+    flex: 1 1 100%; 
+    margin-bottom: 20px;
+}
+
+footer img {
+    width: 30px;  
+    height: 30px;
+}
+
+footer p {
+    font-size: 14px;  
+}
+
+.footer-seccion a {
+    font-size: 16px;  
+}
+}
+
+@media (max-width: 480px) {
+  .navegacion a {
+      font-size: 14px; 
+      padding: 12px 16px;
+  }
+  
+  #icono {
+      width: 25px;
+  }
+
+  #carrito {
+      width: 20px;
+  }
+
+  .textoHeader {
+      font-size: 12px;
+  }
+
+  header {
+      padding: 8px 10px;  
+  }
+
+  .iconos-derecha {
+      margin-top: 5px;  
+  }
+  footer {
+    padding: 15px; 
+}
+
+footer a {
+    font-size: 14px;  
+}
+
+footer img {
+    width: 25px;  
+    height: 25px;
+}
+
 }
