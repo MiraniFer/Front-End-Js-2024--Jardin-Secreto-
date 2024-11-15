@@ -184,6 +184,40 @@ main h2{
   color: grey;
   font-size: 22px;
 }
+/*------------------SECTION--------------*/
+section{
+  padding: 1rem;
+} 
+section h2{
+  text-align: center;
+  color:#72BF78 ;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.card-review {
+  background-color: #fdfffd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  margin: .5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; 
+  height: 380px; 
+  overflow: hidden; 
+}
+.card-review h3{
+  margin-top: 10px;
+  color: #3b3d3b;
+}
+.card-review p{
+  margin: 5px;
+  font-style: italic;
+}
+.rating {
+  font-size: 30px; /* Ajusta el tamaño de las estrellas */
+  color: #ffb400;  /* Color dorado para las estrellas */
+}
   /* ------------- FORMULARIO ---------- */
 .formulario {
     text-align: center;
