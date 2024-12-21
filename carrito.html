@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="textoHeader">Jardin Secreto</h1>
+        <img id="icono" src="img/icono.png" alt="logo" >
+        <h4 class="textoHeader">Plantas naturales</h4>
+        <div class="iconos-derecha">
+          <img src="img/avatar.png" alt="avatar">
+          <img id= carrito src="img/carrito-de-compras.png" alt="carrito">
+        </div>
+    </header>
+    <nav class="navegacion"> 
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label> 
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="news.asp">Productos</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+            <li><a href="about.asp">Reseñas</a></li>
+            <li><a href="about.asp">Tips y cuidados</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carrito de compras -->
+    <div class="container mt-5 mb-5">
+        <h2 class="mb-4">Carrito de Compras</h2>
+
+        <table class="table table-bordered">
+            <thead class="table-warning">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-items">
+                <!-- Aquí se cargarán los productos del carrito -->
+            </tbody>
+        </table>
+
+        <div class="text-end mb-3">
+            <h4>Total: $<span id="total">0</span></h4>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button id="limpiar-carrito" class="btn btn-success">Volver al Inicio</button>
+            <button id="finalizar-compra" class="btn btn-success">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-seccion">
+                <a href="">Sobre nosotros</a>
+                <p>En Jardin Secreto somos apasionados por la naturaleza y comprometidos con ofrecer las mejores plantas y productos para tu jardín. Con más de 10 años de experiencia en el sector, nos dedicamos a cultivar y seleccionar plantas de calidad, adaptadas a diferentes tipos de espacios y condiciones.</p>
+            </div>
+            <div class="footer-seccion">
+                <a href="formulario.html">Contacto</a>
+                <img src="img/correo.png" alt="correo">
+            </div>
+            <div class="footer-seccion">
+                <a href="">Redes sociales</a>
+                <div class="redes-sociales">
+                    <img src="img/facebook (1).png" alt="Facebook">
+                    <img src="img/logotipo-de-instagram.png" alt="Instagram">
+                    <img src="img/gorjeo.png" alt="Twitter">
+                    <img src="img/whatsapp.png" alt="WhatsApp">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Jardin Secreto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="funciones_del_carrito.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
