@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () =>
     const carritoItemsStorage = JSON.parse(localStorage.getItem('cart')) || [];
     const carritoTableBody = document.getElementById('carrito-items');
     const totalgeneral = document.getElementById('total');
+    const carritoNumero = document.getElementById('carrito-numero'); // Elemento para mostrar el número de productos
     let total = 0;
+    let cantidadTotal = 0; //
 
  
     // Cargar productos en la tabla del carrito
@@ -37,10 +39,18 @@ document.addEventListener("DOMContentLoaded", () =>
 
         // Sumar al total
         total += subtotal;
+
+        // Sumar la cantidad de productos
+        cantidadTotal += item.quantity || 1;
     });
 
     // Mostrar el total
     totalgeneral.textContent = total.toFixed(2);
+
+    // Mostrar la cantidad total de productos en el carrito
+    if (carritoNumero) {
+        carritoNumero.textContent = cantidadTotal; // Mostrar la cantidad total de productos en el carrito
+    }
 
     // Botón para limpiar el carrito y volver al inicio
     document.getElementById('limpiar-carrito').addEventListener('click', () => 
